@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FLYEfit</title>
+    </head>
+
+    <body>
+        <h1>FLYEfit Analyzer</h1>
+    </body>
+
+    <h2> Please enter the estimated number of subscribers and Gym features below: </h2>
+    <!-- <p> Eg: [53.358547, -6.255233, Terraced, 12.0, 5.0, 6.0, 320.0] </p> -->
+
+    <!-- <p> The Property type can be one of: Apartment, Terraced_End, Terraced, Bungalow, Semi-D, Detached 
+    </p> -->
+    <!-- <form method="POST">
+        <label>Property Inputs:</label>
+        <input name="text-property">
+        <input type="submit">
+    </form> -->
+
+    <form action='/' method='post'>
+        <label for="subs">Estimated Subscribers:</label><br>
+        <input type="text" id="subs" name="subs" value="3000"><br><br>
+        <label for="lat">Latitude:</label><br>
+        <input type="text" id="lat" name="lat" value="53.358547"><br><br>
+        <label for="long">Longitude:</label><br>
+        <input type="text" id="long" name="long" value="-6.255233"><br><br>
+        <label for="house_type">Property Type can be one of: Apartment, Terraced_End, Terraced, Bungalow, Semi-D, Detached </label><br>
+        <input type="text" id="house_type" name="house_type" value="Terraced"><br><br>
+        <label for="bedrooms">Bedrooms:</label><br>
+        <input type="text" id="bedrooms" name="bedrooms" value="4"><br><br>
+        <label for="bathrooms">Bathrooms:</label><br>
+        <input type="text" id="bathrooms" name="bathrooms" value="3"><br><br>
+        <label for="ber">BER Energy Rating:</label><br>
+        <input type="text" id="ber" name="ber" value="6"><br><br>
+        <label for="size">Size (m^2):</label><br>
+        <input type="text" id="size" name="size" value="310"><br><br>
+        <input type="submit">
+    </form> 
+    <p> Number of Subscribers Entered: {{out00}} </p>
+    <p> Building Details Entered: {{out0}} </p>
+    <p> Building Cost = €{{out1}} </p>
+    <p> Annual Revenue = €{{out2}} </p>
+    <p> ROI (years) = {{out3}} </p>
+
+</html>
