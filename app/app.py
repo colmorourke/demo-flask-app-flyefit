@@ -15,7 +15,7 @@ def hello_world():
     if request_type_str == 'GET':
         return render_template('index.html')
     else:
-        model_in = load('model_pickle.pkl')
+        model_in = load('app/model_pickle.pkl')
         # text_list = request.form['text-property']
         # X_user = construct_df(text_list)
         # cost_pred = model_in.predict(X_user)[0]
